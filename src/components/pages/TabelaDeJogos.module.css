@@ -1,0 +1,33 @@
+.abas {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.abas button{
+    width: 30%;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.abas button.active{
+    background-color: #111;
+    color: #111;
+}
+
+.sets {
+    padding: 10px;
+}
+
+.abas_conteudo {
+    padding: 10px;
+}
+
+
+

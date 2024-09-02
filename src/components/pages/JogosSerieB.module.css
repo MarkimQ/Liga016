@@ -1,0 +1,48 @@
+.table{
+    width: 100%;
+    max-width: 700px;
+    margin-block: 1rem;
+    margin-inline: initial;
+    border-collapse: collapse;
+    /*border: 1px solid red;*/
+}
+
+
+.table tr {
+    height: 30px;
+    border-bottom: 1px solid #cacaca;
+    font-size: 11px;
+    
+}
+
+.table tr:nth-child(even){
+    background-color: #bebebe;
+}
+
+.table td{
+    text-align: center;
+
+}
+
+.table th {
+    background-color: #f2f2f2;
+    height: 40px;
+    border-bottom: 1px solid;
+    position: sticky;
+    top: 0;
+}
+
+.table.input_sets td input {
+    width: 20px;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sets {
+    padding: 10px;
+}
+

@@ -1,0 +1,10 @@
+.btn {
+    padding: 0.1em;
+    text-decoration: none;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+   border-color: rgb(0, 255, 0);
+  }
