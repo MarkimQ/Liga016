@@ -1,15 +1,8 @@
-import {useState} from 'react'
 
 import styles from './ButtonSeries.module.css'
 
-function ButtonSeries(){
+function ButtonSeries({alteraAba, abaAtiva}){
     
-const [abaAtiva, setAbaAtiva] = useState('botao 1')
-
-  function alteraAba(nomeAba) {
-    setAbaAtiva(nomeAba)
-  }
-
     return(
         <section>
           <div className={styles.abas}>
@@ -34,12 +27,8 @@ const [abaAtiva, setAbaAtiva] = useState('botao 1')
               Misto
             </button>
             </div>
-
-
-
     </section>
 
     )
 }
-
 export default ButtonSeries

@@ -3,9 +3,18 @@ import JogosSerieA from './JogosSerieA'
 import JogosSerieB from './JogosSerieB'
 import JogosMisto from './JogosMisto'
 import ButtonSeries from '../form/ButtonSeries'
+import { useState } from 'react'
+
 
 
 function TabelaDeJogos({nomeAba}) {
+
+  const [abaAtiva, setAbaAtiva] = useState('botao 1')
+
+  function alteraAba(nomeAba) {
+    setAbaAtiva(nomeAba)
+    console.log(nomeAba)
+  }
 
   function btnSeries(nomeAba) {
     switch (nomeAba) {
@@ -22,12 +31,12 @@ function TabelaDeJogos({nomeAba}) {
     return (
       <div>
         <div className={styles.abas}>
-          <ButtonSeries />
+          <ButtonSeries abaAtiva = {abaAtiva} alteraAba = {alteraAba} />
 
         </div>
 
         <div className={styles.abas_conteudo}>
-          {btnSeries( )}
+          {btnSeries(abaAtiva)}
         </div>
       </div>
 
