@@ -12,7 +12,6 @@ function JogosSerieB() {
             const response = await fetch('https://raw.githubusercontent.com/MarkimQ/ranking016-json/main/Jogos_Serie_B.json')
             const data = await response.json()
             setJogos(data)
-            console.log(data)
         }
         buscarJogos()
     }, [])

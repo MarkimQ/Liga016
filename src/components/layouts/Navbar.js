@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Container from "./Container";
 
 import styles from "./Navbar.module.css";
-import logo from "../../img/Logo_liga.png";
+import logo from "../../img/Logo_liga60x64.png";
 
 
 function Navbar() {
@@ -15,9 +15,6 @@ function Navbar() {
         <ul className={styles.list}>
           <li className={styles.item}>
             <Link to="/">Home</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to="/Usuarios">Usuarios</Link>
           </li>
           <li className={styles.item}>
             <Link to="/tabeladejogos">Tabela de Jogos</Link>

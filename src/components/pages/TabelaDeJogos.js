@@ -2,14 +2,14 @@ import styles from './TabelaDeJogos.module.css'
 import JogosSerieA from './JogosSerieA'
 import JogosSerieB from './JogosSerieB'
 import JogosMisto from './JogosMisto'
-import ButtonSeries from '../form/ButtonSeries'
 import { useState } from 'react'
+import TabButton from '../form/TabButton'
 
 
 
 function TabelaDeJogos({nomeAba}) {
 
-  const [abaAtiva, setAbaAtiva] = useState('botao 1')
+  const [abaAtiva, setAbaAtiva] = useState('')
 
   function alteraAba(nomeAba) {
     setAbaAtiva(nomeAba)
@@ -18,11 +18,11 @@ function TabelaDeJogos({nomeAba}) {
 
   function btnSeries(nomeAba) {
     switch (nomeAba) {
-      case 'botao 1':
+      case 'Serie A':
         return < JogosSerieA />
-      case 'botao 2':
+      case 'Serie B':
         return < JogosSerieB />
-      case 'botao 3':
+      case 'Misto':
         return < JogosMisto />
       default:
     }
@@ -31,8 +31,9 @@ function TabelaDeJogos({nomeAba}) {
     return (
       <div>
         <div className={styles.abas}>
-          <ButtonSeries abaAtiva = {abaAtiva} alteraAba = {alteraAba} />
-
+              <TabButton nomeAba='Serie A' abaAtiva={abaAtiva} alteraAba={alteraAba}/> 
+              <TabButton nomeAba='Serie B' abaAtiva={abaAtiva} alteraAba={alteraAba}/> 
+              <TabButton nomeAba='Misto' abaAtiva={abaAtiva} alteraAba={alteraAba}/>   
         </div>
 
         <div className={styles.abas_conteudo}>
