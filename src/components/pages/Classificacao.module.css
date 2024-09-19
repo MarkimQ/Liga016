@@ -8,7 +8,7 @@
 }
 
 .table tr {
-    height: 30px;
+    height: 15px;
     border-bottom: 1px solid #cacaca;
     font-size: 11px;
     
@@ -26,6 +26,7 @@
     background-color: #00ff0d;
     color: #00db0b;
 }
+
 
 .table th {
     background-color: #f2f2f2;

@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import Input from '../form/Input'
-import SubmitButton from '../form/SubmitButton';
 import styles from './JogosSerieB.module.css'
 
 function JogosSerieB() {
@@ -9,12 +7,13 @@ function JogosSerieB() {
 
     useEffect(() => {
         const buscarJogos = async () => {
-            const response = await fetch('https://raw.githubusercontent.com/MarkimQ/ranking016-json/main/Jogos_Serie_B.json')
+            const response = await fetch('https://raw.githubusercontent.com/MarkimQ/ranking016-json/main/Liga_016_Etapa_Pe_na_Areia.json')
             const data = await response.json()
             setJogos(data)
         }
         buscarJogos()
     }, [])
+
 
     return (
         <table className={styles.table}>
@@ -28,7 +27,6 @@ function JogosSerieB() {
                     <th>Time Visitante</th>
                     <th>Data</th>
                     <th>Local</th>
-                    <th>Opções</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,14 +34,15 @@ function JogosSerieB() {
                     jogos.map(jogo => (
                         <tr key={jogo.Jogo}>
                             <td>{jogo.Jogo}</td>
-                            <td>{jogo.Time_mandante}</td>
-                            <td><Input type='number' /></td>
+                            <td>{jogo.Time_M}</td>
+                            <td className ={jogo.Jogo_Placar_M === '' ? '' : 'green'}>
+                                {jogo.Jogo_Placar_M}
+                            </td>
                             <td>X</td>
-                            <td><Input type='number' /></td>
-                            <td>{jogo.Time_visitante}</td>
-                            <td>Data</td>
-                            <td><input type="text" placeholder='Local do Jogo' /></td>
-                            <td><SubmitButton /></td>
+                            <td>{jogo.Jogo_Placar_V}</td>
+                            <td>{jogo.Time_V}</td>
+                            <td>{jogo.Data}</td>
+                            <td>{jogo.Arena}</td>
                         </tr>
                     ))
                 }

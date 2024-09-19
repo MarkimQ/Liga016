@@ -1,0 +1,122 @@
+[
+ {
+  "POS": 1,
+  "TIME": "Mateus/ Gui",
+  "PONTOS": 3,
+  "JOGOS": 1,
+  "V": 1,
+  "D": 0,
+  "SETS GANHOS": 2,
+  "SETS PERDIDOS": 0
+ },
+ {
+  "POS": 2,
+  "TIME": "Samuel/ Luizinho",
+  "PONTOS": 3,
+  "JOGOS": 1,
+  "V": 1,
+  "D": 0,
+  "SETS GANHOS": 2,
+  "SETS PERDIDOS": 0
+ },
+ {
+  "POS": 3,
+  "TIME": "Gea/ Miguel",
+  "PONTOS": 2,
+  "JOGOS": 1,
+  "V": 1,
+  "D": 0,
+  "SETS GANHOS": 2,
+  "SETS PERDIDOS": 1
+ },
+ {
+  "POS": 4,
+  "TIME": "Lucas Hass/ Libaia",
+  "PONTOS": 2,
+  "JOGOS": 1,
+  "V": 1,
+  "D": 0,
+  "SETS GANHOS": 2,
+  "SETS PERDIDOS": 1
+ },
+ {
+  "POS": 5,
+  "TIME": "Corpinho/ Di",
+  "PONTOS": 2,
+  "JOGOS": 1,
+  "V": 1,
+  "D": 0,
+  "SETS GANHOS": 2,
+  "SETS PERDIDOS": 1
+ },
+ {
+  "POS": 6,
+  "TIME": "Jhon/ Renatinho",
+  "PONTOS": 2,
+  "JOGOS": 1,
+  "V": 1,
+  "D": 0,
+  "SETS GANHOS": 2,
+  "SETS PERDIDOS": 1
+ },
+ {
+  "POS": 7,
+  "TIME": "Julio/ Douglas",
+  "PONTOS": 1,
+  "JOGOS": 1,
+  "V": 0,
+  "D": 1,
+  "SETS GANHOS": 1,
+  "SETS PERDIDOS": 2
+ },
+ {
+  "POS": 8,
+  "TIME": "Neto/ Esquerda",
+  "PONTOS": 1,
+  "JOGOS": 1,
+  "V": 0,
+  "D": 1,
+  "SETS GANHOS": 1,
+  "SETS PERDIDOS": 2
+ },
+ {
+  "POS": 9,
+  "TIME": "Erick/ Leo",
+  "PONTOS": 1,
+  "JOGOS": 1,
+  "V": 0,
+  "D": 1,
+  "SETS GANHOS": 1,
+  "SETS PERDIDOS": 2
+ },
+ {
+  "POS": 10,
+  "TIME": "Gio/ Andrey",
+  "PONTOS": 1,
+  "JOGOS": 1,
+  "V": 0,
+  "D": 1,
+  "SETS GANHOS": 1,
+  "SETS PERDIDOS": 2
+ },
+ {
+  "POS": 11,
+  "TIME": "Tinho/ Vinicius",
+  "PONTOS": 0,
+  "JOGOS": 1,
+  "V": 0,
+  "D": 1,
+  "SETS GANHOS": 0,
+  "SETS PERDIDOS": 2
+ },
+ {
+  "POS": 12,
+  "TIME": "Icod/ Vitinho",
+  "PONTOS": 0,
+  "JOGOS": 1,
+  "V": 0,
+  "D": 1,
+  "SETS GANHOS": 0,
+  "SETS PERDIDOS": 2
+ }
+]

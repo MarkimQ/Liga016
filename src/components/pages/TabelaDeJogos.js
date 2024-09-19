@@ -9,7 +9,7 @@ import TabButton from '../form/TabButton'
 
 function TabelaDeJogos({nomeAba}) {
 
-  const [abaAtiva, setAbaAtiva] = useState('')
+  const [abaAtiva, setAbaAtiva] = useState('Pé na Areia')
 
   function alteraAba(nomeAba) {
     setAbaAtiva(nomeAba)
@@ -20,7 +20,7 @@ function TabelaDeJogos({nomeAba}) {
     switch (nomeAba) {
       case 'Serie A':
         return < JogosSerieA />
-      case 'Serie B':
+      case 'Pé na Areia':
         return < JogosSerieB />
       case 'Misto':
         return < JogosMisto />
@@ -31,9 +31,9 @@ function TabelaDeJogos({nomeAba}) {
     return (
       <div>
         <div className={styles.abas}>
-              <TabButton nomeAba='Serie A' abaAtiva={abaAtiva} alteraAba={alteraAba}/> 
-              <TabButton nomeAba='Serie B' abaAtiva={abaAtiva} alteraAba={alteraAba}/> 
-              <TabButton nomeAba='Misto' abaAtiva={abaAtiva} alteraAba={alteraAba}/>   
+             {/*} <TabButton nomeAba='Serie A' abaAtiva={abaAtiva} alteraAba={alteraAba}/> */}
+              <TabButton nomeAba='Pé na Areia' abaAtiva={abaAtiva} alteraAba={alteraAba}/> 
+             {/*} <TabButton nomeAba='Misto' abaAtiva={abaAtiva} alteraAba={alteraAba}/>   */}
         </div>
 
         <div className={styles.abas_conteudo}>
